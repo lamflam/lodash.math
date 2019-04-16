@@ -12,7 +12,7 @@
         arr = obj;
       } else {
         key = key || 'value';
-        arr = lodash.pluck(obj, key);
+        arr = lodash.map(obj, key);
       }
       return arr;
     }
